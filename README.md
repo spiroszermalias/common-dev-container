@@ -1,6 +1,6 @@
 # Claude Code Development Container
 
-A secure, production-ready development container designed for running Claude Code with enhanced safety features and network isolation. This container provides a standardized development environment that can be safely used with Claude Code's dangerous mode while protecting your host system. Big parts and firewall.sh were inspired by [anthropics/claude-cod](https://github.com/anthropics/claude-code/tree/main).
+A secure, production-ready development container designed for running Claude Code with enhanced safety features and network isolation. This container provides a standardized development environment that can be safely used with Claude Code's dangerous mode while protecting your host system. A lot of inspiration was drawn from [anthropics/claude-cod](https://github.com/anthropics/claude-code/tree/main).
 
 ## 🔒 Security Features
 
