@@ -19,5 +19,5 @@ jobs:
 
             - name: push image to docker hub
               run: |
-                docker login -u spirosz -p ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+                docker login -u spirosz -p ${{ secrets.DOCKER_HUB_TOKEN }}
                 docker push spirosz/com-dev-container:latest
