@@ -1,0 +1,23 @@
+name: Build and Publish image to Docker Hub
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - Dockerfile
+            - .dockerignore
+
+jobs:
+    publish_images:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v4
+
+            - name: build image
+              run: docker build . -t spirosz/com-dev-container:latest
+
+            - name: push image to docker hub
+              run: |
+                docker login -u spirosz -p ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+                docker push spirosz/com-dev-container:latest
