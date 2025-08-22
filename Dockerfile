@@ -66,7 +66,7 @@ RUN ARCH=$(dpkg --print-architecture) && \
 ENV NPM_CONFIG_PREFIX=/usr/local/share/npm-global
 ENV PATH=$PATH:/usr/local/share/npm-global/bin
 
-# Set the default shell to zsh rather than sh
+# Set the default shell to zsh rather than sh 
 ENV SHELL=/bin/zsh
 
 # Set the default editor and visual
