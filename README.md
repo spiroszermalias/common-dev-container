@@ -34,7 +34,7 @@ Create a `.devcontainer/devcontainer.json` in your project:
 ```json
 {
   "name": "Claude Code Dev Container",
-  "image": "your-registry/claude-dev-container:latest",
+  "image": "spirosz/com-dev-container:latest",
   "remoteUser": "node",
   "features": {},
   "customizations": {
